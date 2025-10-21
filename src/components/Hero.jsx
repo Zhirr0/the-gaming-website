@@ -99,20 +99,20 @@ const Hero = () => {
       >
         <div>
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
-              <div
-                onClick={handleMiniVideoClick}
-                className="origin-center scale-50 opacity-0 transition-all duration-300 ease-in hover:scale-100 hover:opacity-100"
-              >
-                <video
-                  ref={nextVideoRef}
-                  src={getVideoSrc((currentIndex % totalVideos) + 1)}
-                  loop
-                  muted
-                  id="current-video"
-                  className="size-64 origin-center scale-150 object-cover object-center"
-                  onLoadedData={handleVideoLoad}
-                />
-              </div>
+            <div
+              onClick={handleMiniVideoClick}
+              className="origin-center scale-50 opacity-0 transition-all duration-300 ease-in hover:scale-100 hover:opacity-100"
+            >
+              <video
+                ref={nextVideoRef}
+                src={getVideoSrc((currentIndex % totalVideos) + 1)}
+                loop
+                muted
+                id="current-video"
+                className="size-64 origin-center scale-150 object-cover object-center"
+                onLoadedData={handleVideoLoad}
+              />
+            </div>
           </div>
 
           <video
@@ -142,7 +142,7 @@ const Hero = () => {
 
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
-            <h1 className="special-font hero-heading text-blue-100">
+            <h1 className="special-font hero-heading text-blue-100 z-40">
               redefi<b>n</b>e
             </h1>
 
@@ -163,9 +163,11 @@ const Hero = () => {
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
         G<b>A</b>MING
       </h1>
+      <h1 className="special-font hero-heading absolute top-24 left-5 sm:left-10 text-black">
+        redefi<b>n</b>e
+      </h1>
     </div>
   );
-
 };
 
 export default Hero;
