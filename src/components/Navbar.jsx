@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import logoImg from "../../public/img/logo.png";
+// import logoImg from "../../public/img/logo.png";
 import Button from "./Button";
 import { TiLocationArrow } from "react-icons/ti";
 import gsap from "gsap";
@@ -70,7 +70,7 @@ const Navbar = () => {
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
           <div className="flex items-center gap-7">
-            <img src={logoImg} alt="" className="w-10" />
+            <img src="../../img/logo.png" alt="" className="w-10" />
             <Button
               id="product-button"
               title="Products"
@@ -97,7 +97,7 @@ const Navbar = () => {
               className="ml-10 flex items-center space-x-0.5"
             >
               <audio
-                src="../../public/audio/loop.mp3"
+                src="../../audio/loop.mp3"
                 className="hidden cursor-pointer"
                 ref={audioElementRef}
                 loop
