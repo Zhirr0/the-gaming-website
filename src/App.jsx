@@ -3,6 +3,7 @@ import gsap from "gsap"
 import { ReactLenis } from "lenis/react"
 import Hero from "./components/Hero"
 import About from "./components/About"
+import Navbar from "./components/Navbar"
 
 const App = () => {
   const lenisRef = useRef()
@@ -18,7 +19,9 @@ const App = () => {
 
   return (
     <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>
+
       <main className="relative min-h-screen w-screen overflow-x-hidden">
+        <Navbar />
         <Hero />
         <About />
       </main>
