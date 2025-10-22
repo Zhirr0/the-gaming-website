@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react"
 import gsap from "gsap"
 import { ReactLenis } from "lenis/react"
 import Hero from "./components/Hero"
+import About from "./components/About"
 
 const App = () => {
   const lenisRef = useRef()
@@ -19,8 +20,7 @@ const App = () => {
     <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>
       <main className="relative min-h-screen w-screen overflow-x-hidden">
         <Hero />
-
-        <section className="min-h-screen bg-blue-500"></section>
+        <About />
       </main>
     </ReactLenis>
   )
